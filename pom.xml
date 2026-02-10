@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>CREAZZO_validazione_json</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.13.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.networknt</groupId>
+            <artifactId>json-schema-validator</artifactId>
+            <version>1.0.87</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>8.3.0</version>
+        </dependency>
+    </dependencies>
+</project>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+String pathSchema = "src/main/resources/persone.schema.json";
+        String pathPersone = "src/main/resources/elencoPersone.json";
+
+        // Validazione
+        try {
+            ObjectMapper mapper = new ObjectMapper();
+            JsonNode schemaNode = mapper.readTree(new File(pathSchema));
+            JsonNode personeNode = mapper.readTree(new File(pathPersone));
+
+            JsonSchemaFactory fct = JsonSchemaFactory.getInstance(SpecVersion.VersionFlag.V7);
+            JsonSchema schema = fct.getSchema(schemaNode);
+
+            Set<ValidationMessage> errors = schema.validate(personeNode);
+
+            if(!errors.isEmpty()) {
+                for (ValidationMessage error : errors)
+                    System.err.println(error.getMessage());
+            }
+            else
+                System.out.println("JSON valido!");
+        } catch (IOException e) {
+            System.err.println("Errore: " + e.getMessage());
+        }
+
+        // Parsing
+        String json = null;
+        try {
+            json = Files.readString(Path.of(pathPersone));
+        } catch (IOException e) {
+            System.err.println("Errore: " + e.getMessage());
+        }
+
+-->
