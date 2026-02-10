@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Biblioteca",
+  "type": "object",
+  "properties": {
+    "biblioteca": {
+      "type": "object",
+      "properties": {
+        "libro": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "titolo": { "type": "string" },
+              "anno": { "type": "integer" },
+              "autore": {
+                "type": "object",
+                "properties": {
+                  "nome": { "type": "string" },
+                  "cognome": { "type": "string" },
+                  "nazionalita": { "type": "string" }
+                },
+                "required": ["nome", "cognome", "nazionalita"]
+              },
+              "generi": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "copie": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "tipo": { "type": "string" },
+                    "disponibili": { "type": "integer" }
+                  },
+                  "required": ["tipo", "disponibili"]
+                }
+              }
+            },
+            "required": ["titolo", "anno", "autore", "generi", "copie"]
+          }
+        }
+      },
+      "required": ["libro"]
+    }
+  },
+  "required": ["biblioteca"]
+}

@@ -1,0 +1,46 @@
+{
+  "biblioteca": {
+    "libro": [
+      {
+        "titolo": "Il vento tra i salici",
+        "anno": 1908,
+        "autore": {
+          "nome": "Kenneth",
+          "cognome": "Grahame",
+          "nazionalita": "Britannica"
+        },
+        "generi": ["Avventura", "Fantasy"],
+        "copie": [
+          {
+            "tipo": "cartaceo",
+            "disponibili": 5
+          },
+          {
+            "tipo": "ebook",
+            "disponibili": 10
+          }
+        ]
+      },
+      {
+        "titolo": "1984",
+        "anno": 1949,
+        "autore": {
+          "nome": "George",
+          "cognome": "Orwell",
+          "nazionalita": "Britannica"
+        },
+        "generi": ["Distopico", "Politico"],
+        "copie": [
+          {
+            "tipo": "cartaceo",
+            "disponibili": 8
+          },
+          {
+            "tipo": "audiolibro",
+            "disponibili": 3
+          }
+        ]
+      }
+    ]
+  }
+}
